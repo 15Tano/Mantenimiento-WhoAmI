@@ -10,16 +10,17 @@ import 'package:flutter/material.dart';
 
 // Colores base
 const kPurple = Color(0xFFD6A7F4); // Morado principal
-const kBlue   = Color(0xFF9ED3FF); // Azul del mockup
-const kInk    = Color(0xFF111111); // Texto principal
-const kGrey1  = Color(0xFF6B7280); // Texto secundario / placeholders
+const kBlue = Color(0xFF9ED3FF); // Azul del mockup
+const kInk = Color(0xFF111111); // Texto principal
+const kGrey1 = Color(0xFF6B7280); // Texto secundario / placeholders
 
 // Verde pastel (para secciones de juegos y acentos suaves)
 const kGreenPastel = Color(0xFFB6E2B6);
+const kEmergencyRed = Color(0xFFFF6B6B);
 
 // Campos y bordes
 const kFieldBorder = Color(0xFFE5E7EB);
-const kFieldFill   = Color(0xFFF7F8FA);
+const kFieldFill = Color(0xFFF7F8FA);
 
 /// ===========================================================
 /// TEMA GLOBAL DE LA APLICACIÓN
@@ -57,8 +58,7 @@ final appTheme = ThemeData(
     isDense: true,
     filled: true,
     fillColor: kFieldFill,
-    contentPadding:
-        const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+    contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
     hintStyle: const TextStyle(color: kGrey1),
     labelStyle: const TextStyle(color: kGrey1),
     enabledBorder: OutlineInputBorder(
@@ -94,8 +94,9 @@ final appTheme = ThemeData(
 /// ===========================================================
 /// Se usan para mantener la identidad de color en botones tipo pastilla
 ButtonStyle pillBlue() => FilledButton.styleFrom(backgroundColor: kBlue);
-ButtonStyle pillLav()  => FilledButton.styleFrom(backgroundColor: kPurple);
-ButtonStyle pillGreen() => FilledButton.styleFrom(backgroundColor: kGreenPastel);
+ButtonStyle pillLav() => FilledButton.styleFrom(backgroundColor: kPurple);
+ButtonStyle pillGreen() =>
+    FilledButton.styleFrom(backgroundColor: kGreenPastel);
 ButtonStyle pill(Color c) => FilledButton.styleFrom(backgroundColor: c);
 
 /// ===========================================================

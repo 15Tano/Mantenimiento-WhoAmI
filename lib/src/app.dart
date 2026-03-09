@@ -1,3 +1,6 @@
+//Pantalla Home Nueva
+//lib/src/app.dart
+
 // lib/app.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -20,6 +23,7 @@ import 'ui/screens/register_role_page.dart';
 // Pantallas principales (Homes por rol)
 import 'ui/screens/home_caregiver.dart';
 import 'ui/screens/home_consultant.dart';
+import 'ui/screens/home_patient.dart'; // ← Nueva pantalla del paciente
 
 // Ajustes
 import 'ui/screens/settings_page.dart';
@@ -30,8 +34,8 @@ import 'ui/screens/patients_list_page.dart';
 import 'ui/screens/register_patient_page.dart';
 
 // Juegos
-import 'ui/screens/game_page.dart';       // Solo menú de juegos (GamesPage)
-import 'ui/screens/memorama_page.dart';   // Juego del memorama (MemoramaPage)
+import 'ui/screens/game_page.dart'; // Solo menú de juegos (GamesPage)
+import 'ui/screens/memorama_page.dart'; // Juego del memorama (MemoramaPage)
 
 // Notificaciones
 import 'ui/screens/notifications_page.dart'; // Nueva pantalla de notificaciones
@@ -70,6 +74,7 @@ class WhoAmIApp extends StatelessWidget {
         '/': (_) => const AuthGate(),
         '/auth/choice': (_) => const ChoiceStart(),
         '/login': (_) => const LoginPage(),
+        HomePatientPage.route: (_) => const HomePatientPage(),
 
         // --- Registro de usuarios ---
         '/register/name': (_) => const RegisterNamePage(),
