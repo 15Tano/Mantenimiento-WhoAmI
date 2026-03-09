@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Acceso a carpeta cache propia (útil para cámara / image_picker) -->
+    <cache-path name="cache" path="." />
+    <!-- Acceso a files/ propia -->
+    <files-path name="files" path="." />
+</paths>

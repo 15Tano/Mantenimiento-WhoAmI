@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "103480993491",
+    "project_id": "whoami-app-1234",
+    "storage_bucket": "whoami-app-1234.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103480993491:android:01a7595813486cc8629626",
+        "android_client_info": {
+          "package_name": "com.example.whoami_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSaqn5YqieJdVhyP27PegyqUfBxffj-Qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,69 @@
+name: whoami_app
+description: "Who Am I – app móvil"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # --- UI / Diseño ---
+  table_calendar: ^3.1.2
+  confetti: ^0.8.0
+
+  # --- Firebase ---
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+  firebase_storage: ^12.3.1
+  google_sign_in: ^6.2.2
+
+  # --- Navegación / Estado ---
+  go_router: ^14.2.7
+  provider: ^6.1.5+1
+
+  # --- Biometría / PIN ---
+  local_auth: ^2.3.0
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.3.2
+
+  # --- Cámara / Galería ---
+  image_picker: ^1.1.2
+
+  # --- Texto a voz ---
+  flutter_tts: ^3.8.5
+
+  # --- Permisos ---
+  permission_handler: ^11.3.1
+
+  # --- WebView ---
+  flutter_inappwebview: ^6.0.0+5
+
+  # --- Notificaciones locales (versiones que no chocan) ---
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/gdevelop_game/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
