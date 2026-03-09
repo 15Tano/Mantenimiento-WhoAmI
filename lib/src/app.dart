@@ -22,7 +22,7 @@ import 'ui/screens/register_role_page.dart';
 
 // Pantallas principales (Homes por rol)
 import 'ui/screens/home_caregiver.dart';
-import 'ui/screens/home_consultant.dart';
+//import 'ui/screens/home_consultant.dart';
 import 'ui/screens/home_patient.dart'; // ← Nueva pantalla del paciente
 
 // Ajustes
@@ -74,7 +74,6 @@ class WhoAmIApp extends StatelessWidget {
         '/': (_) => const AuthGate(),
         '/auth/choice': (_) => const ChoiceStart(),
         '/login': (_) => const LoginPage(),
-        HomePatientPage.route: (_) => const HomePatientPage(),
 
         // --- Registro de usuarios ---
         '/register/name': (_) => const RegisterNamePage(),
@@ -86,10 +85,8 @@ class WhoAmIApp extends StatelessWidget {
           final args = ModalRoute.of(ctx)?.settings.arguments as Map?;
           return HomeCaregiverPage(displayName: args?['name'] as String?);
         },
-        '/home/consultant': (ctx) {
-          final args = ModalRoute.of(ctx)?.settings.arguments as Map?;
-          return HomeConsultantPage(displayName: args?['name'] as String?);
-        },
+
+        '/home/consultant': (_) => const HomePatientPage(),
 
         // --- Ajustes y perfil ---
         '/settings': (_) => const SettingsPage(),
