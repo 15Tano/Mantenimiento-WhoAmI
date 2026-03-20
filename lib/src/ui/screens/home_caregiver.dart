@@ -14,6 +14,8 @@
 // ║  • Badge de notificaciones incluye alertas activas en      ║
 // ║    el conteo total (suma alertas + notificaciones locales). ║
 // ╚══════════════════════════════════════════════════════════════╝
+dartimport 'package:whoami_app/services/emergency_alert_service.dart';
+import 'package:whoami_app/src/ui/widgets/emergency_alert_banner.dart';
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
