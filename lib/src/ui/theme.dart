@@ -16,6 +16,7 @@ const kGrey1 = Color(0xFF6B7280); // Texto secundario / placeholders
 
 // Verde pastel (para secciones de juegos y acentos suaves)
 const kGreenPastel = Color(0xFFB6E2B6);
+
 const kEmergencyRed = Color(0xFFFF6B6B);
 
 // Campos y bordes

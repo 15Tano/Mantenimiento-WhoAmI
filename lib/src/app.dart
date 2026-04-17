@@ -1,4 +1,5 @@
 //Pantalla Home Nueva
+
 //lib/src/app.dart
 
 // lib/app.dart
@@ -19,6 +20,7 @@ import 'ui/screens/login_page.dart';
 import 'ui/screens/register_name_page.dart';
 import 'ui/screens/register_password_page.dart';
 import 'ui/screens/register_role_page.dart';
+import 'ui/screens/memories_reel_page.dart';
 
 // Pantallas principales (Homes por rol)
 import 'ui/screens/home_caregiver.dart';
@@ -100,8 +102,13 @@ class WhoAmIApp extends StatelessWidget {
         GamesPage.route: (_) => const GamesPage(),
         MemoramaPage.route: (_) => const MemoramaPage(),
 
+        //Ruta Home
+        HomePatientPage.route: (_) => const HomePatientPage(),
+
         // --- Notificaciones ---
         NotificationsPage.route: (_) => const NotificationsPage(),
+
+        MemoriesReelPage.route: (_) => const MemoriesReelPage(),
       },
     );
   }
